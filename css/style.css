@@ -16,3 +16,72 @@ menu{
     list-style: none;
 }
 
+/* Debug Rules */
+
+.debug .vertical-macro-layout{
+    background-color: aqua;
+    border: 2px dotted black;
+}
+
+.debug .vertical-macro-layout__top{
+    background-color: blueviolet;
+}
+
+.debug .vertical-macro-layout__bottom{
+    background-color: brown;
+}
+
+.debug .main-header{
+    background-color: chocolate;
+}
+
+.debug .main-content{
+    background-color: coral;
+}
+
+/************
+MACRO LAYOUT
+************/
+
+/* Vertical Macro Layout */
+
+.vertical-macro-layout {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.vertical-macro-layout__top{
+    flex-grow: 1;
+}
+
+.vertical-macro-layout__bottom{
+    flex-shrink: 0;
+    height: 90px;
+}
+
+/* Horizontal Macro Layout */
+
+.horizontal-macro-layout{
+    display: flex;
+    width: 100%;
+}
+
+.main-header{
+    width: 230px;
+    flex-shrink: 0;
+}
+
+.main-content{
+    flex-grow: 1;
+}
+
+@media screen and (max-width:552px) {
+
+    .main-header{
+        width: 50px;
+    }
+
+}
+
+/* General Rules */
