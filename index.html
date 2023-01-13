@@ -12,7 +12,7 @@
     <title>Spotify</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
-<body class="debug">
+<body class="debug-">
 
     <div class="vertical-macro-layout">
 
@@ -39,7 +39,7 @@
             <div class="row align-center">
 
                 <!-- Sinistra -->
-                <div class="col-side">
+                <div class="col-side player-section__left">
                     
                     <div class="row align-center">
 
@@ -70,10 +70,104 @@
                 </div>
 
                 <!-- Centro -->
-                <div class="col-center">aa</div>
+                <div class="col-center player-section__center">
+                    <div class="row">
+                        <!-- sopra -->
+                        <div class="col-100 player-section__center-top">
+                            <div class="row align-center">
+                                
+                                <div class="col">
+                                    <i class="fa-solid fa-shuffle"></i>
+                                </div>
+
+                                <div class="col">
+                                    <i class="fa-solid fa-backward-step"></i>
+                                </div>
+
+                                <div class="col play-icon">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
+
+                                <div class="col">
+                                    <i class="fa-solid fa-forward-step"></i>
+                                </div>
+
+                                <div class="col">
+                                    <i class="fa-solid fa-rotate-right"></i>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- sotto -->
+                        <div class="col-100 player-section__center-bottom">
+                            <div class="row align-center">
+
+                                <div class="col">
+                                    <span>0:25</span>
+                                    
+                                </div>
+
+                                
+                                <div class="volume-bar">
+
+                                    <div class="volume-progress"></div>
+
+                                    <div class="volume-total"></div>
+
+                                </div>
+                                   
+
+                                <div class="col">
+                                    <span>4:35</span>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
 
                 <!-- Destra -->
-                <div class="col-side">aa</div>
+                <div class="col-side player-section__right">
+
+                    <div class="row">
+
+                        <!-- parte sinistra -->
+                        <div class="col player-section__icon-right">
+                            <div class="row">
+                                <div class="col">
+                                    <i class="fa-sharp fa-solid fa-list"></i>
+                                </div>
+                                <div class="col">
+                                    <i class="fa-solid fa-display"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- parte destra con barra con volume -->
+                        <div class="col player-section__volume align-center">
+                            <div class="row align-center">
+
+                                <div class="col">
+                                    <i class="fa-solid fa-volume-high"></i>
+                                </div>
+
+                                <div class="volume-bar">
+
+                                    <div class="volume-progress"></div>
+
+                                    <div class="volume-total"></div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
 
             </div>
         

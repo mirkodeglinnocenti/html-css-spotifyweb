@@ -105,6 +105,12 @@ MACRO LAYOUT
     flex-wrap: wrap;
 }
 
+/* Colonne */
+
+.col-100{
+    flex-basis: 100%;
+}
+
 /* Player Section */
 
 .player-section{
@@ -126,12 +132,14 @@ MACRO LAYOUT
     flex-basis: 40%;
 }
 
+/* Colonna Sinistra */
+
 .player-section .player-section__album-img{
     max-width: 42px;
     margin-right: 12px;
 }
 
-.player-section .col-side > .row {
+.player-section .player-section__left > .row{
     justify-content: space-between;
 }
 
@@ -148,4 +156,77 @@ MACRO LAYOUT
 .player-section__nome-brano{
     font-size: 11px;
     color: var(--light-grey);
+}
+
+/* Colonna Destra */
+
+.player-section__icon-right > .row{
+    gap: 17px;
+}
+
+.player-section__right > .row{
+    gap: 17px;
+}
+
+.player-section__volume > .row{
+    gap: 14px;
+}
+
+.player-section__volume {
+    flex-grow: 1;
+}
+
+.player-section__volume .volume-bar{
+    width: 100%;
+    position: relative;
+}
+
+.volume-progress,
+.volume-total {
+    height: 5px;
+    position: absolute;
+    transform: translate(0, -50%);
+    top: 0;
+    left: 0;
+    border-radius: 30px;
+}
+
+.volume-progress{
+    width: 30%;
+    background-color: var(--light-grey);
+    z-index: 1;
+}
+
+.volume-total{
+    width: 100%;
+    background-color: #5A5A5A;
+}
+
+.player-section__right i{
+    font-size: 13px;
+}
+
+/* Colonna Centrale */
+.player-section__center > .row{
+    flex-direction: column;
+}
+
+
+.player-section__center-bottom > .row{
+    justify-content: space-between;
+}
+
+.player-section__center-bottom .volume-bar{
+    width: 80%;
+    position: relative;
+}
+
+.player-section__center-top > .row{
+    justify-content: center;
+    gap: 22px;
+}
+
+.player-section__center-top .play-icon{
+    font-size: 30px;
+    padding: 0 10px;
 }
