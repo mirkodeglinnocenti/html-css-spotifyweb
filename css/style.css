@@ -27,25 +27,8 @@ menu{
 
 /* Debug Rules */
 
-.debug .vertical-macro-layout{
-    background-color: aqua;
-    border: 2px dotted black;
-}
-
-.debug .vertical-macro-layout__top{
-    background-color: blueviolet;
-}
-
-/* .debug .vertical-macro-layout__bottom{
-    background-color: brown;
-} */
-
-.debug .main-header{
-    background-color: chocolate;
-}
-
-.debug .main-content{
-    background-color: coral;
+.debug [class^="col-"] {
+    border: 3px solid rgb(17, 232, 17);
 }
 
 /************
@@ -62,6 +45,7 @@ MACRO LAYOUT
 
 .vertical-macro-layout__top{
     flex-grow: 1;
+    overflow: hidden;
 }
 
 .vertical-macro-layout__bottom{
@@ -85,7 +69,7 @@ MACRO LAYOUT
 
 .main-content{
     flex-grow: 1;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 @media screen and (max-width:552px) {
@@ -100,7 +84,6 @@ MACRO LAYOUT
 
 .row{
     display: flex;
-    flex-wrap: wrap;
 }
 
 /* Player Section */
@@ -108,16 +91,17 @@ MACRO LAYOUT
 .player-section{
     padding: 0 11px;
     background-color: var(--grey);
+    color: white;
 }
 
 .player-section > .row{
     justify-content: space-between;
 }
 
-.player__album{
-    flex-basis: 20%;
+.player-section .col-side{
+    flex-basis: 150px;
 }
 
-p {
-    font-size: 40px;
+.player-section .col-center{
+    flex-basis: 40%;
 }
