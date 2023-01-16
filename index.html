@@ -8,7 +8,7 @@
     <script src="https://kit.fontawesome.com/913f8a24a8.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <title>Spotify</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -32,37 +32,65 @@
                     <!-- Menu -->
                     <nav class="col- header__menu">
 
-                        <a href="#">
-                            <div class="row align-center">
-                                <img class="menu-home" src="./img/home.svg" alt="icona home">
-                                <span class="menu-title">Home</span>
-                            </div>
-                        </a>
+                        <ul>
 
-                        <a href="#">
-                            <div class="row align-center">
-                                <img class="menu-home" src="./img/search.svg" alt="icona di ricerca">
-                                <span class="menu-title">Cerca</span>
-                            </div>
-                        </a>
-
-                        <a href="#">
-                            <div class="row align-center">
-                                <img class="menu-home" src="./img/libreria.svg" alt="icona della libreria">
-                                <span class="menu-title">La tua libreria</span>
-                            </div>
-                        </a>
+                            <li>
+                                <a href="#">
+                                    <div class="row align-center">
+                                        <img class="menu-home" src="./img/home.svg" alt="icona home">
+                                        <span class="menu-title">Home</span>
+                                    </div>
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="#">
+                                    <div class="row align-center">
+                                        <img class="menu-home" src="./img/search.svg" alt="icona di ricerca">
+                                        <span class="menu-title">Cerca</span>
+                                    </div>
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="#">
+                                    <div class="row align-center">
+                                        <img class="menu-home" src="./img/libreria.svg" alt="icona della libreria">
+                                        <span class="menu-title">La tua libreria</span>
+                                    </div>
+                                </a>
+                            </li>
+                            
+                        </ul>
 
                     </nav>
     
                     <!-- Playlist -->
                     <div class="col- header__playlist">
 
-                        <h3>Playlist</h3>
-                        <div class="row align-center">
-                            <img class="menu-home" src="./img/" alt="icona della libreria">
-                            <span class="menu-title">Crea Playlist</span>
+                        <h3 class="playlist__title">Playlist</h3>
+
+                        <div class="playlist__button">
+                            <a href="#">
+                                <div class="row align-center">
+                                    <span class="playlist__plus">+</span>
+                                    <span class="playlist__link">Crea Playlist</span>
+                                </div>
+                            </a>
                         </div>
+                        
+
+                        <ul>
+                            <li class="playlist__nome"><a href="#">Nome Playlist</a></li>
+                            <li class="playlist__nome"><a href="#">Nome Playlist</a></li>
+                            <li class="playlist__nome"><a href="#">Nome Playlist</a></li>
+                            <li class="playlist__nome"><a href="#">Nome Playlist</a></li>
+                            <li class="playlist__nome"><a href="#">Nome Playlist</a></li>
+                            <li class="playlist__nome"><a href="#">Nome Playlist</a></li>
+                            <li class="playlist__nome"><a href="#">Nome Playlist</a></li>
+                        </ul>
+
+
 
                     </div>
     

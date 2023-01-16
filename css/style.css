@@ -7,7 +7,7 @@
 }
 
 html{
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 img{
@@ -302,7 +302,6 @@ MACRO LAYOUT
 .main-header .header__menu a{
     display: inline-block;
     padding: 6px 23px;
-    border: 1px solid green;
 }
 
 .main-header .menu-title{
@@ -314,7 +313,48 @@ MACRO LAYOUT
     color: white;
 }
 
+/* Playlist Rules */
 
+.header__playlist{
+    padding: 0 20px;
+}
+
+.playlist__title{
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.playlist__button{
+    padding-bottom: 10px;
+}
+
+.header__playlist .row{
+   gap: 10px;
+}
+
+.playlist__button > a{
+    display: contents;
+}
+
+.playlist__plus{
+    font-size: 35px;
+    padding: 0 13px;
+    background-color: var(--light-grey);
+    color: black;
+}
+
+.playlist__link{
+    color: var(--light-grey);
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.playlist__nome{
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--light-grey);
+    margin: 13px 0;
+}
 
 /* Installa App */
 
@@ -384,7 +424,12 @@ MACRO LAYOUT
     .main-header .header__menu a{
         display: inline-block;
         padding: 6px 15px;
-        border: 1px solid green;
+    }
+
+    /* Playlist */
+
+    .header__playlist{
+        display: none;
     }
 
     /* Installa app */
