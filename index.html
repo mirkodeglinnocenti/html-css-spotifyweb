@@ -20,7 +20,73 @@
 
             <!-- Menu laterale -->
             <header class="main-header">
-                Header
+
+                <div class="row">
+
+                    <!-- Logo -->
+                    <div class="col- header__logo">
+                        <img class="header__logo-big" src="./img/logo.svg" alt="logo di Spotify">
+                        <img class="header__logo-small" src="./img/logo-small.svg" alt="logo di Spotify">
+                    </div>
+                    
+                    <!-- Menu -->
+                    <nav class="col- header__menu">
+
+                        <a href="#">
+                            <div class="row align-center">
+                                <img class="menu-home" src="./img/home.svg" alt="icona home">
+                                <span class="menu-title">Home</span>
+                            </div>
+                        </a>
+
+                        <a href="#">
+                            <div class="row align-center">
+                                <img class="menu-home" src="./img/search.svg" alt="icona di ricerca">
+                                <span class="menu-title">Cerca</span>
+                            </div>
+                        </a>
+
+                        <a href="#">
+                            <div class="row align-center">
+                                <img class="menu-home" src="./img/libreria.svg" alt="icona della libreria">
+                                <span class="menu-title">La tua libreria</span>
+                            </div>
+                        </a>
+
+                    </nav>
+    
+                    <!-- Playlist -->
+                    <div class="col- header__playlist">
+
+                        <h3>Playlist</h3>
+                        <div class="row align-center">
+                            <img class="menu-home" src="./img/" alt="icona della libreria">
+                            <span class="menu-title">Crea Playlist</span>
+                        </div>
+
+                    </div>
+    
+                    <!-- Download -->
+                    <div class="col- header__download">
+                        <a href="#">
+                            <i class="download__icon fa-regular fa-circle-down"></i>
+                            <span class="download__text">Installa app</span>
+                        </a>
+                        
+                    </div>
+    
+                    <!-- Profile -->
+                    <div class="col- header__user">
+                        <a href="#">
+                            <div class="row align-center">
+                                <img class="user__icon" src="./img/profile.svg" alt="icona del profilo">
+                                <span class="header__user__name">John Doe</span>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+                
             </header>
     
             <!-- Contenuto principale -->
@@ -49,7 +115,7 @@
                                 <img src="./img/sinister.jpeg" alt="foto album sinister">
                             </figure>
     
-                            <div>
+                            <div class="player-section__song-details">
                                 <h6 class="player-section__album">Sinister</h6>
                                 <p class="player-section__nome-brano">Brano Nome</p>
                             </div>
@@ -74,29 +140,29 @@
                     <div class="row">
                         <!-- sopra -->
                         <div class="col-100 player-section__center-top">
-                            <div class="row align-center">
+                            <ul class="row align-center">
                                 
-                                <div class="col">
+                                <li class="col">
                                     <i class="fa-solid fa-shuffle"></i>
-                                </div>
+                                </li>
 
-                                <div class="col">
+                                <li class="col">
                                     <i class="fa-solid fa-backward-step"></i>
-                                </div>
+                                </li>
 
-                                <div class="col play-icon">
+                                <li class="col play-icon">
                                     <i class="fa-regular fa-circle-play"></i>
-                                </div>
+                                </li>
 
-                                <div class="col">
+                                <li class="col">
                                     <i class="fa-solid fa-forward-step"></i>
-                                </div>
+                                </li>
 
-                                <div class="col">
+                                <li class="col">
                                     <i class="fa-solid fa-rotate-right"></i>
-                                </div>
+                                </li>
 
-                            </div>
+                            </ul>
                         </div>
                         <!-- sotto -->
                         <div class="col-100 player-section__center-bottom">
@@ -104,7 +170,6 @@
 
                                 <div class="col">
                                     <span>0:25</span>
-                                    
                                 </div>
 
                                 
@@ -147,7 +212,7 @@
                         </div>
 
                         <!-- parte destra con barra con volume -->
-                        <div class="col player-section__volume align-center">
+                        <div class="col player-section__volume">
                             <div class="row align-center">
 
                                 <div class="col">
@@ -177,3 +242,44 @@
     
 </body>
 </html>
+
+
+
+
+
+<!-- <div class="col-side player-section__right">
+
+    <div class="row"> -->
+
+        <!-- parte sinistra -->
+        <!-- <div class="col player-section__icon-right">
+            <div class="row">
+                <div class="col">
+                    <i class="fa-sharp fa-solid fa-list"></i>
+                </div>
+                <div class="col">
+                    <i class="fa-solid fa-display"></i>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- parte destra con barra con volume -->
+        <!-- <div class="col player-section__volume">
+            <div class="row align-center">
+
+                <div class="col">
+                    <i class="fa-solid fa-volume-high"></i>
+                </div>
+
+                <div class="volume-bar">
+
+                    <div class="volume-progress"></div>
+
+                    <div class="volume-total"></div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div> -->
