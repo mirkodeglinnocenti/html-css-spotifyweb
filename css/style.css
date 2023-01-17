@@ -121,10 +121,25 @@ MACRO LAYOUT
     font-weight: 600;
 }
 
+.title-section{
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+}
+
+.container{
+    padding-left: 20px;
+    padding-right: 35px;
+}
+
 /* Colonne */
 
 .col-100{
     flex-basis: 100%;
+}
+
+.col-2{
+    flex-basis: calc( (100%/6) - ( 75px / 6) );
 }
 
 /* Player Section */
@@ -319,7 +334,7 @@ MACRO LAYOUT
 }
 
 /* Da controllare */
-.main-header .menu-title:active{
+.main-header .menu-title:visited{
     color: white;
 }
 
@@ -471,12 +486,15 @@ MACRO LAYOUT
     background-color: var(--blue);
 }
 
+
+/* Update bar */
+
 .update-bar {
     justify-content: flex-end;
     background-color: var(--dark-blue);
     position: fixed;
     top: 0px;
-    left: 0;
+    left: 230px;
     right: 0;
     z-index: 10;
 }
@@ -485,3 +503,75 @@ MACRO LAYOUT
     margin: 20px 5px 28px 0;
     font-size: 12px;
 }
+
+/* Query */
+
+@media screen and (max-width: 552px) {
+
+    .update-bar {
+        left: 50px;
+    }
+
+}
+
+/* Category Content */
+
+.category-content{
+    margin-top: calc( 90px + 23px );
+    margin-bottom: 39px;
+}
+
+.category__list{
+    display: contents;
+}
+
+.category-content > .row{
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 24px;
+    row-gap: 44px;
+}
+
+.category__item{
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--light-grey);
+    text-transform: uppercase;
+}
+
+/* Recently played */
+
+.album-img{
+    margin-bottom: 21px;
+    width: 177px;
+}
+
+.album-title{
+    font-size: 16px;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 11px;
+}
+
+.song-title{
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+    color: var(--light-grey);
+}
+
+.recently-played__section{
+    gap: 15px;
+}
+
+.recently-played .title-section{
+    margin-bottom: 30px;
+}
+
+.card > .row {
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Query Recently played */
