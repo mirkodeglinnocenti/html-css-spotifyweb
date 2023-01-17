@@ -375,18 +375,17 @@ MACRO LAYOUT
     font-size: 14px;
 }
 
+.main-header .menu-item{
+    opacity: 0.6;
+}
+
 .main-header .header__menu a{
     display: inline-block;
     padding: 6px 23px;
 }
 
-.main-header .menu-title{
-    color: var(--light-grey);
-}
-
-/* Da controllare */
-.main-header .menu-title:visited{
-    color: white;
+.main-header .menu-item:hover{
+    opacity: 1;
 }
 
 /* Playlist Rules */
@@ -432,6 +431,18 @@ MACRO LAYOUT
     margin: 13px 0;
 }
 
+.playlist__nome:hover{
+    color: white;
+}
+
+.crea-playlist{
+    opacity: 0.8;
+}
+
+.crea-playlist:hover{
+    opacity: 1;
+}
+
 /* Installa App */
 
 .main-header .header__download {
@@ -445,6 +456,10 @@ MACRO LAYOUT
 .header__download .download__icon{
     margin-left: 3px;
     margin-right: 11px;
+}
+
+.header__download:hover {
+    color: white;
 }
 
 /* Header User */
