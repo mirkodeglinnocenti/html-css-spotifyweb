@@ -146,8 +146,12 @@ MACRO LAYOUT
 
 /* Card */
 
-.card-img{
+.img-container{
+    position: relative;
     margin-bottom: 21px;
+}
+
+.card-img{
     width: 177px;
 }
 
@@ -168,6 +172,25 @@ MACRO LAYOUT
 .card > .row {
     flex-direction: column;
     align-items: center;
+}
+
+.overlay {
+    display: none;
+}
+
+.card:hover .overlay{
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    z-index: 5;
+    font-size: 60px;
+    color: white;
+}
+
+.card:hover .card-img{
+    opacity: 0.2;
 }
 
 /* Player Section */
@@ -532,6 +555,11 @@ MACRO LAYOUT
     font-size: 12px;
 }
 
+.update-bar .button:hover {
+    transform: scale(1.1);
+}
+
+
 /* Query */
 
 @media screen and (max-width: 552px) {
@@ -565,6 +593,23 @@ MACRO LAYOUT
     font-weight: 600;
     color: var(--light-grey);
     text-transform: uppercase;
+    position: relative;
+}
+
+.category__item:hover{
+    color: white;
+}
+
+.category__item .active::after{
+    content: '';
+    display: block;
+    height: 2px;
+    width: 30px;
+    background-color: #ADFF2F;
+    position: absolute;
+    bottom: -6px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 /* Recently played */
