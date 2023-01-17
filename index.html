@@ -34,16 +34,16 @@
 
                         <ul>
 
-                            <li>
+                            <li class="menu-list-item">
                                 <a href="#">
-                                    <div class="row align-center menu-item">
+                                    <div class="row align-center menu-item menu-active">
                                         <img class="menu-home" src="./img/home.svg" alt="icona home">
                                         <span class="menu-title">Home</span>
                                     </div>
                                 </a>
                             </li>
                             
-                            <li>
+                            <li class="menu-list-item">
                                 <a href="#">
                                     <div class="row align-center menu-item">
                                         <img class="menu-home" src="./img/search.svg" alt="icona di ricerca">
@@ -52,7 +52,7 @@
                                 </a>
                             </li>
                             
-                            <li>
+                            <li class="menu-list-item">
                                 <a href="#">
                                     <div class="row align-center menu-item">
                                         <img class="menu-home" src="./img/libreria.svg" alt="icona della libreria">
@@ -153,7 +153,7 @@
 
                         <ul class="category__list">
                             <li class="category__item">
-                                <a class="active" href="#">in evidenza</a>
+                                <a class="category__active" href="#">in evidenza</a>
                             </li>
     
                             <li class="category__item">
@@ -372,15 +372,20 @@
     
                             <div class="player-section__song-details">
                                 <h6 class="player-section__album">Sinister</h6>
-                                <p class="player-section__nome-brano">Brano Nome</p>
+                                <a class="player-section__nome-brano" href="#">Brano Nome</a>
                             </div>
     
                         </div>
     
                         <div class="row wrap player-section__icon-left">
     
-                            <i class="fa-regular fa-heart"></i>
-                            <i class="fa-regular fa-folder"></i>
+                            <a href="#">
+                                <i class="fa-regular fa-heart"></i>
+                            </a> 
+                            <a href="#">
+                                <i class="fa-regular fa-folder"></i>
+                            </a>
+                            
     
                         </div>
                         
@@ -427,12 +432,10 @@
                                     <span>0:25</span>
                                 </div>
 
-                                
+
                                 <div class="volume-bar">
 
                                     <div class="volume-progress"></div>
-
-                                    <div class="volume-total"></div>
 
                                 </div>
                                    
