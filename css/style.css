@@ -127,6 +127,12 @@ MACRO LAYOUT
     color: white;
 }
 
+.subtitle-section{
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--light-grey);
+}
+
 .container{
     padding-left: 20px;
     padding-right: 35px;
@@ -138,8 +144,30 @@ MACRO LAYOUT
     flex-basis: 100%;
 }
 
-.col-2{
-    flex-basis: calc( (100%/6) - ( 75px / 6) );
+/* Card */
+
+.card-img{
+    margin-bottom: 21px;
+    width: 177px;
+}
+
+.card-title{
+    font-size: 16px;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+}
+
+.card-subtitle{
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+    color: var(--light-grey);
+}
+
+.card > .row {
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Player Section */
@@ -541,27 +569,10 @@ MACRO LAYOUT
 
 /* Recently played */
 
-.album-img{
-    margin-bottom: 21px;
-    width: 177px;
+.recently-played{
+    padding-bottom: 45px;
 }
-
-.album-title{
-    font-size: 16px;
-    color: white;
-    font-weight: 700;
-    text-align: center;
-    margin-bottom: 11px;
-}
-
-.song-title{
-    font-size: 12px;
-    font-weight: 600;
-    text-align: center;
-    color: var(--light-grey);
-}
-
-.recently-played__section{
+.carousel-section{
     gap: 15px;
 }
 
@@ -569,9 +580,61 @@ MACRO LAYOUT
     margin-bottom: 30px;
 }
 
-.card > .row {
-    flex-direction: column;
-    align-items: center;
+.col-2{
+    flex-basis: calc( (100%/6) - ( 75px / 6) );
 }
 
 /* Query Recently played */
+
+@media screen and (max-width: 878px) {
+
+    .col-2{
+        flex-basis: calc( (100%/4) - ( 45px / 4) );
+    }
+
+    .carousel-section{
+        flex-wrap: wrap;
+    }
+
+    .card-img{
+        width: auto;
+    }
+
+}
+
+@media screen and (max-width: 639px) {
+
+    .col-2{
+        flex-basis: calc( (100%/2) - ( 15px / 2) );
+    }
+
+}
+
+/* Creato per john doe */
+
+.creato-per-user .title-section,
+.artisti-popolari .title-section{
+    margin-bottom: 13px;
+}
+
+.creato-per-user .subtitle-section,
+.artisti-popolari .subtitle-section{
+    margin-bottom: 30px;
+}
+
+.creato-per-user{
+    padding-bottom: 32px;
+}
+
+
+/* Artisti Popolari */
+
+.artisti-popolari{
+    padding-bottom: 30px;
+}
+
+.artisti-popolari .card-img{
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+} 
