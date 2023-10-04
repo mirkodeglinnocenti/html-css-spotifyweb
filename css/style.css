@@ -597,7 +597,7 @@ MACRO LAYOUT
 .update-bar {
     justify-content: flex-end;
     background-color: var(--dark-blue);
-    position: fixed;
+    position: sticky;
     top: 0px;
     left: 230px;
     right: 0;
